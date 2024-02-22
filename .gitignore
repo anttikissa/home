@@ -4,4 +4,6 @@
 # Except these
 !.gitignore
 !README.md
+!.config
+!.config/**
 
