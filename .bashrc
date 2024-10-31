@@ -1,3 +1,18 @@
+# 1. Aliases (first because most often changed)
+alias ls='ls -FA --color=tty'
+alias l='ls -l'
+
+alias gc='git commit'
+alias gdc='git diff --cached'
+alias gsh='git show'
+
+# 2. Path (because second most often changed)
+export PATH=$PATH:/opt/homebrew/bin:~/bin:./node_modules/.bin
+
+#
+# And the rest...
+# 
+
 # Necessary since .bash_profile runs this (the only way to always run this)
 if [ -z "$PS1" ]
 then
@@ -7,28 +22,15 @@ fi
 
 echo [debug] .bashrc
 
-# Disabled mac nag
+# Disable mac nag
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# Settings
-
+# Prompt
 # __git_ps1 comes from here
 source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
-
 START_COLOR="\e[0;32m"
 END_COLOR="\e[m"
-
 export PS1="$(__git_ps1 "${START_COLOR}%s${END_COLOR} ")\h:\w\$ "
-#PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-
-export PATH=$PATH:/opt/homebrew/bin:~/bin:./node_modules/.bin
-
-# Aliases
-alias ls='ls -FA --color=tty'
-alias l='ls -l'
-
-alias gc='git commit'
-alias gdc='git diff --cached'
 
 # Trick to change root prompt (root .profile doesn't work, etc)
 sudo() {
@@ -42,4 +44,3 @@ sudo() {
 eval "$(scmpuff init --shell=sh)"
 
 cat .todo
-
