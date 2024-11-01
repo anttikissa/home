@@ -44,3 +44,7 @@ sudo() {
 eval "$(scmpuff init --shell=sh)"
 
 cat .todo
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
