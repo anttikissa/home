@@ -7,7 +7,7 @@ alias gdc='git diff --cached'
 alias gsh='git show'
 
 # 2. Path (because second most often changed)
-export PATH=$PATH:/opt/homebrew/bin:~/bin:./node_modules/.bin
+export PATH=$PATH:/opt/homebrew/bin:~/bin:./node_modules/.bin:/Applications/WebStorm.app/Contents/MacOS
 
 #
 # And the rest...

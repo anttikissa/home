@@ -10,6 +10,3 @@
 !.bashrc
 !.bash_profile
 
-# But do ignore these (copilot stores stuff like chat sessions here) 
-.config/github-copilot
-
