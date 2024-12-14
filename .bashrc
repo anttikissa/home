@@ -5,6 +5,8 @@ alias l='ls -l'
 alias gc='git commit'
 alias gdc='git diff --cached'
 alias gsh='git show'
+alias gr='git reset'
+alias gb='git branch'
 
 # 2. Path (because second most often changed)
 export PATH=$PATH:/opt/homebrew/bin:~/bin:./node_modules/.bin:/Applications/WebStorm.app/Contents/MacOS
